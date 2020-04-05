@@ -19,6 +19,8 @@ Translates SQL query to MongoDB shell command.
     identifier = string literal
     String literal may consist of latin letters, digits and underscores, or may be single-quoted string without escapes.
 
+##### Arguments:
+
 The only argument of program is a string representing SQL query to translate into MongoDB shell command.
 
 If the argument is omitted, the program runs in interactive mode.
