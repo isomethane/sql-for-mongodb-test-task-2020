@@ -2,7 +2,7 @@
 
 Translates SQL query to MongoDB shell command.
 
-Query syntax:
+##### Query syntax:
 
     SELECT select_expression
     FROM table_name
@@ -23,7 +23,7 @@ The only argument of program is a string representing SQL query to translate int
 
 If the argument is omitted, the program runs in interactive mode.
 
-How to run program using gradle task:
+##### How to run program using gradle task:
 
     gradle jar
     java -jar ./build/libs/sql-for-mongodb-test-task-2020-1.0-SNAPSHOT.jar [query]
