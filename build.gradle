@@ -30,6 +30,10 @@ dependencies {
     antlr "org.antlr:antlr4:4.7"
 }
 
+test {
+    useJUnitPlatform()
+}
+
 compileKotlin {
     kotlinOptions.jvmTarget = "1.8"
 }

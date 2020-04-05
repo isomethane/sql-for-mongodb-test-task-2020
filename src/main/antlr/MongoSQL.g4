@@ -3,7 +3,7 @@ grammar MongoSQL;
 // PARSER RULES
 
 statement
-    : selectStatement
+    : selectStatement EOF
     ;
 
 selectStatement
