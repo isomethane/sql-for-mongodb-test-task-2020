@@ -4,7 +4,7 @@ plugins {
     id 'antlr'
 }
 
-group 'ru.hse.spb'
+group 'ru.spb.hse.isomethane'
 version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
@@ -40,4 +40,16 @@ compileKotlin {
 
 compileTestKotlin {
     kotlinOptions.jvmTarget = "1.8"
+}
+
+sourceSets {
+    main.java.srcDirs += 'src/main/kotlin/'
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'ru.spb.hse.isomethane.MainKt'
+    }
+
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
 }
